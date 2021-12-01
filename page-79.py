@@ -8,3 +8,8 @@ for item in numBS:
         countNonErroneous +=1
 averageNonErroneous = totalNonErroneous / countNonErroneous
 print(averageNonErroneous)
+
+for counter in range(len(numBS)):
+    if numBS[counter] < 0:
+        numBS[counter] = averageNonErroneous
+print(numBS)
